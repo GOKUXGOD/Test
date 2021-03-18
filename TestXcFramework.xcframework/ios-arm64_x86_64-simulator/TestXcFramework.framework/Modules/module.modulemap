@@ -1,0 +1,11 @@
+framework module TestXcFramework {
+  umbrella header "TestXcFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module TestXcFramework.Swift {
+    header "TestXcFramework-Swift.h"
+    requires objc
+}
